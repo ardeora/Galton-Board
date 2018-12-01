@@ -18,6 +18,17 @@ body {
 
 button:focus {outline:0;}
 
+h6 {
+  left: 50%;
+  top: 80%;
+  transform: translate(-50%,-50%);
+  color: white;
+  position: absolute;
+}
+
+.footer {
+  position: relative;
+}
 /* ------------------------------------------ */
 
 /* Main Description */
