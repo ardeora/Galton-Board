@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title> Galton Board </title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.12.0/matter.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Product+Sans" rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="galton.css">
+  </head>
+  <body>
+    <div class="page-header"> Galton Board </div>
+
+    <div class="galton-whole">
+      <div class="form-group">
+        <label>Number Of Balls</label>
+        <select class="form-control" id="nn">
+          <option>15</option>
+          <option>30</option>
+          <option>100</option>
+          <option>200</option>
+          <option>300</option>
+        </select>
+        <label>Select Ball Color</label>
+        <label class="form-control" id="test_wrapper"><input id="inp" value="#61a4f7" type="color"></label>
+      </div>
+
+        <input type="submit" id="submit" value="Run">
+
+    <div class="galton-container">
+        <canvas id="galton-cnv"></canvas>
+    </div>
+    </div>
+    <div class="footer"></div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="Galton.js"></script>
+  </body>
+</html>
