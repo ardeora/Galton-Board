@@ -25,6 +25,9 @@ var render = Render.create({
 
 $(document).on('change','#inp',function(){
   $("#test_wrapper").css('background-color',""+document.getElementById('inp').value);
+  $("body").css('background-color',""+document.getElementById('inp').value);
+  $("#submit").css('background-color',""+document.getElementById('inp').value);
+  $("#submit").css('background-image',"none");
 });
 
 // Global Variables
